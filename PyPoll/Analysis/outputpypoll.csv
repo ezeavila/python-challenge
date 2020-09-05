@@ -1,3 +1,8 @@
 Election Results
 Total Votes: 3521001
 "Results by Candidate: [{'Candidate': 'Khan', 'Percentage of Votes (%)': 63.0, 'Total Votes': 2218231}, {'Candidate': 'Correy', 'Percentage of Votes (%)': 20.0, 'Total Votes': 704200}, {'Candidate': 'Li', 'Percentage of Votes (%)': 14.0, 'Total Votes': 492940}, {'Candidate': ""O'Tooley"", 'Percentage of Votes (%)': 3.0, 'Total Votes': 105630}]"
+" {'Candidate': 'Khan', 'Percentage of Votes (%)': 63.0, 'Total Votes': 2218231}"
+" {'Candidate': 'Correy', 'Percentage of Votes (%)': 20.0, 'Total Votes': 704200}"
+" {'Candidate': 'Li', 'Percentage of Votes (%)': 14.0, 'Total Votes': 492940}"
+" {'Candidate': ""O'Tooley"", 'Percentage of Votes (%)': 3.0, 'Total Votes': 105630}"
+"Winner: {'Candidate': 'Khan', 'Percentage of Votes (%)': 63.0, 'Total Votes': 2218231}"
