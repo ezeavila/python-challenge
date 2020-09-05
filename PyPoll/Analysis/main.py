@@ -1,5 +1,6 @@
 import os
 import csv
+import operator
 
 csvpath = os.path.join('..' , 'Resources', '02-Homework_03-Python_Instructions_PyPoll_Resources_election_data.csv')
 
@@ -27,13 +28,16 @@ with open(csvpath) as pypollcsv:
 print("Election Results")
 print("___________________________________")
 print([f"Total Votes: {int(totalvotes)}"])
-print(final_list)
+#print(final_list)
 print("-----------------------------------")
-print(final_list[0])
-print(final_list[1])
-print(final_list[2])
-print(final_list[3])
+#print(final_list[0])
+#print(final_list[1])
+#print(final_list[2])
+#print(final_list[3])
+for indvresult in final_list:
+    print(indvresult)
 print("-----------------------------------")
+
 print(f"Winner: {final_list[0]}")
 
 output_file = os.path.join("outputpypoll.csv")
