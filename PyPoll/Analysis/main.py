@@ -21,7 +21,7 @@ with open(csvpath) as pypollcsv:
             candidates[row[2]] = 0
         candidates[row[2]] = candidates[row[2]] + 1
 
-        final_list = [{'Candidate' : row, 'Total Votes' : candidates[row], 'Percentage %' : round(float(candidates[row]/totalvotes * 100),2)} for row in candidates]
+        final_list = [{'Candidate' : row, 'Percentage of Votes (%)' : round(float(candidates[row]/totalvotes * 100),2), 'Total Votes' : candidates[row], } for row in candidates]
 
 
 
