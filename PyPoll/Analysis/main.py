@@ -1,6 +1,7 @@
 import os
 import csv
 import operator
+from collections import Counter
 
 csvpath = os.path.join('..' , 'Resources', '02-Homework_03-Python_Instructions_PyPoll_Resources_election_data.csv')
 
@@ -25,15 +26,11 @@ with open(csvpath) as pypollcsv:
         final_list = [{'Candidate' : row, 'Percentage of Votes (%)' : round(float(candidates[row]/totalvotes * 100),2), 'Total Votes' : candidates[row], } for row in candidates]
 
 
+
 print("Election Results")
 print("___________________________________")
 print([f"Total Votes: {int(totalvotes)}"])
-#print(final_list)
 print("-----------------------------------")
-#print(final_list[0])
-#print(final_list[1])
-#print(final_list[2])
-#print(final_list[3])
 for indvresult in final_list:
     print(indvresult)
 print("-----------------------------------")
@@ -52,3 +49,4 @@ with open(output_file, "w") as summaryelection:
     writer.writerow([f" {final_list[2]}"])
     writer.writerow([f" {final_list[3]}"])
     writer.writerow([f"Winner: {final_list[0]}"])
+
